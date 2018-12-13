@@ -164,8 +164,6 @@ install_wfc() {
     local _wfc_version
     local _download_dir
 
-    say "Retrieving chatterbox release from $TARBALL_URL..."
-
     _arch_url=$(ensure curl "$TARBALL_URL" -s | grep -hoP "$_regex")
 
     say "Downloading and extracting $TARBALL_URL..."
