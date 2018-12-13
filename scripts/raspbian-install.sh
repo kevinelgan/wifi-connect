@@ -5,11 +5,11 @@ set -u
 trap "exit 1" TERM
 export TOP_PID=$$
 
-: "${WFC_REPO:=balena-io/wifi-connect}"
+: "${WFC_REPO:=GigundoAI/wifi-connect}"
 : "${WFC_INSTALL_ROOT:=/usr/local}"
 
 SCRIPT='raspbian-install.sh'
-NAME='WiFi Connect Raspbian Installer'
+NAME='Chatterbox WiFi Connect Installer'
 
 INSTALL_BIN_DIR="$WFC_INSTALL_ROOT/sbin"
 INSTALL_UI_DIR="$WFC_INSTALL_ROOT/share/wifi-connect/ui"
