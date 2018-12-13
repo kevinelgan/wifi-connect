@@ -172,7 +172,7 @@ install_wfc() {
 
     _download_dir=$(ensure mktemp -d)
 
-    ensure curl -Ls "$_arch_url" | tar -xz -C "$_download_dir"
+    ensure curl -Ls "$TARBALL_URL" | tar -xz -C "$_download_dir"
 
     ensure sudo mv "$_download_dir/wifi-connect" $INSTALL_BIN_DIR
 
