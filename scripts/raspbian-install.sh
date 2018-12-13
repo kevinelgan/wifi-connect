@@ -15,7 +15,7 @@ INSTALL_BIN_DIR="$WFC_INSTALL_ROOT/sbin"
 INSTALL_UI_DIR="$WFC_INSTALL_ROOT/share/wifi-connect/ui"
 
 RELEASE_URL="https://api.github.com/repos/$WFC_REPO/releases/latest"
-TARBALL_URL="https://api.github.com/repos/$WFC_REPO/tarball/chatterbox"
+TARBALL_URL="https://github.com/GigundoAI/wifi-connect/archive/chatterbox.tar.gz"
 CONFIRMATION=true
 
 usage() {
@@ -168,7 +168,7 @@ install_wfc() {
 
     _arch_url=$(ensure curl "$TARBALL_URL" -s | grep -hoP "$_regex")
 
-    say "Downloading and extracting $_arch_url..."
+    say "Downloading and extracting $TARBALL_URL..."
 
     _download_dir=$(ensure mktemp -d)
 
