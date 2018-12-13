@@ -174,7 +174,7 @@ install_wfc() {
 
     ensure curl -Ls "$TARBALL_URL" | tar -xz -C "$_download_dir"
 
-    ensure sudo mv "$_download_dir/wifi-connect" $INSTALL_BIN_DIR
+    ensure sudo mv "$_download_dir/wifi-connect-chatterbox" $INSTALL_BIN_DIR
 
     ensure sudo mkdir -p $INSTALL_UI_DIR
 
