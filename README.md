@@ -1,5 +1,3 @@
-<h1 align="center"><img width="460" src="https://github.com/GigundoAI/wifi-connect/raw/master/ui/img/logo.png" /></h1>
-
 > Easy WiFi setup for Chatterbox from your mobile phone or laptop
 
 WiFi Connect is a utility for dynamically setting the WiFi configuration on Chatterbox via a captive portal. 
